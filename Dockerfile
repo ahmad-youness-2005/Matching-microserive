@@ -34,6 +34,6 @@ RUN adduser --disabled-password --gecos '' appuser && \
     chown -R appuser:appuser /app
 USER appuser
 
-EXPOSE 8090
+EXPOSE 5008
 
 CMD ["python", "-u", "run.py"]

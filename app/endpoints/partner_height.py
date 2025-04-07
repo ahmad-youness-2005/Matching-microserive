@@ -4,7 +4,7 @@ from typing import List
 import logging
 
 from app.db.session import get_db
-from app.schemas.partner_height import PartnerHeightScore
+from app.schemas.partner_height import PartnerHeight
 from app.dto.partner_height import (
     PartnerHeightCreate,
     PartnerHeightUpdate,

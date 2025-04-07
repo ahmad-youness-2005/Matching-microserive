@@ -2,8 +2,8 @@ from sqlalchemy import Column, Boolean, Text
 from app.db.database import Base
 
 
-class PartnerHeightScore(Base):
-    __tablename__ = "partner_height_score"
+class PartnerHeight(Base):
+    __tablename__ = "partner_height"
     
     user_id = Column(Text, primary_key=True, nullable=False)
     

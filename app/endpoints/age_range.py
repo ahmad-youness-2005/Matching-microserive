@@ -4,7 +4,7 @@ from typing import List
 from datetime import datetime
 
 from app.db.database import get_db
-from app.schemas.age_range import AgeRangeScore
+from app.schemas.age_range import AgeRange
 from app.dto.age_range import AgeRangeCreate, AgeRangeUpdate, AgeRangeResponse, MessageResponse
 
 router = APIRouter(

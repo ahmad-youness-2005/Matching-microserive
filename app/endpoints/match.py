@@ -5,8 +5,8 @@ import uuid
 from datetime import datetime
 
 from app.dto.match import CreateMatch, MatchResponse, MatchStatus, MessageResponse
-from app.db.database import get_db
-from app.models.match import Match
+from app.db.session import get_db
+from app.schemas.match import Match
 
 router = APIRouter(
     prefix="/match",

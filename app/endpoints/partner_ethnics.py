@@ -3,9 +3,9 @@ from sqlalchemy.orm import Session
 from typing import List, Dict
 from sqlalchemy.exc import SQLAlchemyError
 
-from app.db.database import get_db
-from app.schemas.partner_ethnics_score import PartnerEthnicsScore
-from app.dto.partner_ethnics_score import (
+from app.db.session import get_db
+from app.schemas.partner_ethnics import PartnerEthnics
+from app.dto.partner_ethnics import (
     PartnerEthnicsBase,
     PartnerEthnicsCreate,
     PartnerEthnicsUpdate,

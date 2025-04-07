@@ -4,7 +4,7 @@ from typing import List
 import logging
 
 from app.db.session import get_db
-from app.schemas.partner_children_expectations import PartnerChildrenExpectationsScore
+from app.schemas.partner_children_expectations import PartnerChildrenExpectations
 from app.dto.partner_children_expectations import (
     PartnerChildrenExpectationsCreate,
     PartnerChildrenExpectationsUpdate,

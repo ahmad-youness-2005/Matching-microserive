@@ -2,8 +2,8 @@ from sqlalchemy import Column, Boolean, Text
 from app.db.database import Base
 
 
-class PartnerMarriageTimelineScore(Base):
-    __tablename__ = "partner_marriage_timeline_score"
+class PartnerMarriageTimeline(Base):   
+    __tablename__ = "partner_marriage_timeline"
 
     user_id = Column(Text, primary_key=True, nullable=False)
     partner_agree_together = Column(Boolean, default=False)

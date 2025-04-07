@@ -2,8 +2,8 @@ from sqlalchemy import Column, Boolean, Text
 
 from app.db.database import Base
 
-class SectsScore(Base):
-    __tablename__ = 'sects_score'
+class Sects(Base): 
+    __tablename__ = 'sects'
     
     user_id = Column(Text, primary_key=True, nullable=False)
     sunni = Column(Boolean, default=False)

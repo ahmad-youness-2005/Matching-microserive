@@ -2,8 +2,8 @@ from sqlalchemy import Column, Boolean, Text
 from app.db.database import Base
 
 
-class PartnerChildrenExpectationsScore(Base):
-    __tablename__ = "partner_children_expectations_score"
+class PartnerChildrenExpectations(Base):
+    __tablename__ = "partner_children_expectations"
 
     user_id = Column(Text, primary_key=True, nullable=False)
     partner_wants_children = Column(Boolean, default=False)
