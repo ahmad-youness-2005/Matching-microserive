@@ -4,8 +4,8 @@ from sqlalchemy.exc import SQLAlchemyError
 from typing import List
 import logging
 
-from app.db.database import get_db
-from app.schemas.prayer_frequency import PrayerFrequencyScore
+from app.db.session import get_db
+from app.schemas.prayer_frequency import PrayerFrequency
 from app.dto.prayer_frequency import (
     PrayerFrequencyCreate, 
     PrayerFrequencyUpdate, 

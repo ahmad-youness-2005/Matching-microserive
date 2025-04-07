@@ -3,8 +3,8 @@ from sqlalchemy.ext.declarative import declarative_base
 
 from app.db.database import Base
 
-class PartnerEthnicsScore(Base):
-    __tablename__ = "partner_ethnics_scores"
+class PartnerEthnics(Base):
+    __tablename__ = "partner_ethnics"
 
     user_id = Column(Text, primary_key=True, index=True, nullable=False)
     afghanistan = Column(Boolean, default=False)

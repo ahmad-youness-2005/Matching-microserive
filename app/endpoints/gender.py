@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from typing import List
 
 from app.db.database import get_db
-from app.schemas.gender import GenderScore
+from app.schemas.gender import Gender
 from app.dto.gender import (
     GenderCreate,
     GenderResponse,

@@ -3,9 +3,9 @@ from sqlalchemy.orm import Session
 from typing import List, Any, Dict
 import logging
 
-from app.db.database import get_db
-from app.models.visited import VisitedScore
-from app.schemas.visited import VisitedCreate, VisitedUpdate
+from app.db.session import get_db
+from app.schemas.visited import Visited
+from app.dto.visited import VisitedCreate, VisitedUpdate , MessageResponse
 
 router = APIRouter(prefix="/visited", tags=["visited"])
 logger = logging.getLogger(__name__)

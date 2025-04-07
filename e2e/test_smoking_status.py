@@ -1,17 +1,18 @@
 import requests
 
 class TestSmokingStatus:
-    def __init__(self):
-        self.base_url = "http://localhost:8000/api/v1"
+    def __init__(self, base_url="http://localhost:5008", api_prefix="/api/v1"):
+        self.base_url = f"{base_url}{api_prefix}"
 
     def add_smoking_status(self,children_data):
-        print(f"Adding a children ...")
-        response = requests.post(f"{self.base_url}/smoking-status" , json = children_data )
+        print(f"Adding a smoking status...")
+        response = requests.post(f"{self.base_url}/smoking-status", json=children_data)
         if response.status_code >=200 and response.status_code <=299:
-            print(f"The user with data {children_data} has been added successfully")
+            print(f"Successfully added smoking status. Response: {response.json()}")
             return response.json()
         else:
-            print(f"The data {children_data} with id {children_data['user_id']} failed to be addded")
+            print(f"Failed to add smoking status. Status code: {response.status_code}, Response: {response.text}")
+            return None
 
     def get_smoking_status(self,children_id):
         print(f"Getting the children with ID: {children_id}")

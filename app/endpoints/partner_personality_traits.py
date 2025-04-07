@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from typing import List, Dict, Any
 import logging
 
-from app.db.database import get_db
+from app.db.session import get_db
 from app.schemas.partner_personality_traits import PartnerPersonalityTraitsScore
 from app.dto.partner_personality_traits import (
     PartnerPersonalityTraitsCreate,

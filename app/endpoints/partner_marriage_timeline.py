@@ -4,7 +4,7 @@ from typing import List
 import logging
 
 from app.db.session import get_db
-from app.schemas.partner_marriage_timeline import PartnerMarriageTimelineScore
+from app.schemas.partner_marriage_timeline import PartnerMarriageTimeline
 from app.dto.partner_marriage_timeline import (
     PartnerMarriageTimelineCreate,
     PartnerMarriageTimelineUpdate,
